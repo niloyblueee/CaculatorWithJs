@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="calculator">
+        <input id="display" type="text" value="0" readonly>
+        <div class="buttons">
+          <button onclick="Clear()"  class="special">AC</button>
+          <button onclick="AppendToDisplay('')" class="special">+/-</button>
+          <button onclick="AppendToDisplay('%')" class="special">%</button>
+          <button onclick="AppendToDisplay('/')" class="operator">&divide;</button>
+          <button onclick="AppendToDisplay('7')" class="number">7</button>
+          <button onclick="AppendToDisplay('8')" class="number">8</button>
+          <button onclick="AppendToDisplay('9')" class="number">9</button>
+          <button onclick="AppendToDisplay('*')"  class="operator">&times;</button>
+          <button onclick="AppendToDisplay('4')" class="number">4</button>
+          <button onclick="AppendToDisplay('5')" class="number">5</button>
+          <button onclick="AppendToDisplay('6')" class="number">6</button>
+          <button onclick="AppendToDisplay('-')" class="operator">-</button>
+          <button onclick="AppendToDisplay('1')" class="number">1</button>
+          <button onclick="AppendToDisplay('2')" class="number">2</button>
+          <button onclick="AppendToDisplay('3')" class="number">3</button>
+          <button onclick="AppendToDisplay('+')" class="operator">+</button>
+          <button onclick="AppendToDisplay('0')" class="number" style="grid-column: span 2; border-radius: 25px;">0</button>
+          <button onclick="AppendToDisplay('.')" class="number">.</button>
+          <button onclick="Equal()" class="operator">=</button>
+        </div>
+      </div>
+      <script src="calc.js"></script>
+    </body>
+</html>
